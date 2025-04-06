@@ -17,3 +17,8 @@ tasks:
     desc: Install the dependencies
     cmds:
       - npm install
+
+  run:
+    desc: Run the project
+    cmds:
+      - npx next dev --experimental-https

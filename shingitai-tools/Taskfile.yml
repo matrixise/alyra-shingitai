@@ -2,9 +2,6 @@
 
 version: '3'
 
-vars:
-  GREETING: Hello, World!
-
 tasks:
   badges:reduce-size:
     desc: Reduce the size of the badges
@@ -30,3 +27,8 @@ tasks:
       - task: badges:reduce-size
       - task: badges:upload
       - task: update:populate
+
+  install:dependencies:
+    desc: Install the dependencies
+    cmds:
+      - npm install

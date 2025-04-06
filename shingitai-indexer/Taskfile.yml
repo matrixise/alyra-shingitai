@@ -5,3 +5,8 @@ tasks:
     desc: Run the Ponder node
     cmds:
       - npm run dev
+
+  install:dependencies:
+    desc: Install the dependencies
+    cmds:
+      - npm install

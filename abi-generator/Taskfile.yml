@@ -11,3 +11,8 @@ tasks:
     sources:
       - ../shingitai-backend/artifacts/contract/GradeSBT.sol/GradeSBT.json
       - ../shingitai-backend/artifacts/contract/ParticipationSFT.sol/ParticipationSFT.sol.json
+
+  install:dependencies:
+    desc: Install the dependencies
+    cmds:
+      - npm install

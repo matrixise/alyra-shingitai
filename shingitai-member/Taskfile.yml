@@ -12,3 +12,8 @@ tasks:
     desc: Format the code
     cmds:
       - npm run prettier
+
+  install:dependencies:
+    desc: Install the dependencies
+    cmds:
+      - npm install

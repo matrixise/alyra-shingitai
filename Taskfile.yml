@@ -10,6 +10,18 @@ includes:
   indexer:
     taskfile: ./shingitai-indexer/Taskfile.yml
     dir: ./shingitai-indexer
+  backoffice:
+    taskfile: ./shingitai-backoffice/Taskfile.yml
+    dir: ./shingitai-backoffice
+  member:
+    taskfile: ./shingitai-member/Taskfile.yml
+    dir: ./shingitai-member
+  tools:
+    taskfile: ./shingitai-tools/Taskfile.yml
+    dir: ./shingitai-tools
+  certificate:
+    taskfile: ./shingitai-certificate/Taskfile.yml
+    dir: ./shingitai-certificate
 
 tasks:
   update-abi:
@@ -26,3 +38,17 @@ tasks:
       - abi-generator/src/generated.ts
     run: when_changed
     method: timestamp
+  all:install:dependencies:
+    desc: Install the dependencies for each project
+    cmds:
+      - task: abi_generator:install:dependencies
+      - task: backend:install:dependencies
+      - task: indexer:install:dependencies
+      - task: backoffice:install:dependencies
+      - task: member:install:dependencies
+      - task: tools:install:dependencies
+      - task: certificate:install:dependencies
+  github:actions:
+    desc: Run the Github Actions with act
+    cmds:
+      - act --container-architecture linux/amd64
