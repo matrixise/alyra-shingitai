@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  lint:
+    desc: Run the linter
+    cmds:
+      - npm run lint
+
+  format:
+    desc: Format the code
+    cmds:
+      - npm run prettier
