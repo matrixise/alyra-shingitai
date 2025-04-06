@@ -6,7 +6,7 @@ tasks:
   install:dependencies:
     desc: Install the dependencies
     cmds:
-      - npm installgit
+      - npm install
   compile:
     desc: Compile the smart contract
     cmds:
