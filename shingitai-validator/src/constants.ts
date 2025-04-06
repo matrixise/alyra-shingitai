@@ -1,0 +1,2 @@
+export const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2YnV0anNraHZxc3RrcGJha3J6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE2MzY5MjgsImV4cCI6MjA1NzIxMjkyOH0.UKPTpjmfdV37wwNlBnhREDpMAeSVLUmt5M5xZOlCpEo"
+export const supabaseUrl = 'https://dvbutjskhvqstkpbakrz.supabase.co'
