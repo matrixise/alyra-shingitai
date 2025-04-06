@@ -1,0 +1,32 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  badges:reduce-size:
+    desc: Reduce the size of the badges
+    cmds:
+      - mkdir -p badges images
+      - mogrify -path ./badges -resize 25% ./badges-origin/*.png
+      - mogrify -path ./images -resize 25% ./images-origin/*.png
+
+  badges:upload:
+    desc: Upload the Badges and Images to Pinata
+    cmds:
+      - pinata upload badges/ > badges.json
+      - pinata upload images/ > images.json
+
+  update:populate:
+    desc: Update the populate
+    cmds:
+      - cp badges.json images.json ../shingitai-backend/scripts/
+
+  update-all:
+    desc: Update all
+    cmds:
+      - task: badges:reduce-size
+      - task: badges:upload
+      - task: update:populate
