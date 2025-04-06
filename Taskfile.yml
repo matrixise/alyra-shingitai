@@ -1,0 +1,6 @@
+version: '3'
+
+includes:
+  backend:
+    taskfile: ./shingitai-backend/Taskfile.yml
+    dir: ./shingitai-backend

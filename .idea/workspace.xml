@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b74fde0-b0a0-439e-bc14-10bc9b3d3891" name="Changes" comment="" />
+    <list default="true" id="3b74fde0-b0a0-439e-bc14-10bc9b3d3891" name="Changes" comment="Add .tool-versions with task and nodejs versions">
+      <change afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/Taskfile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/GradeManager.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/GradeSBT.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/IGradeSBT.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/IPresenceCounter.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/ParticipationSFT.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/PresenceCounter.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/PresenceCounterMock.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/hardhat.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/ignition/modules/Deployments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/badges.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/generated.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/images.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/populate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/GradeManager.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/GradeSBT.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/ParticipationSFT.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/PresenceCounter.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/GradeManagerWrapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/GradeSBTContractWrapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/ParticipationContractWrapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/PresenceCounterWrapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shingitai-backend/wagmi.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +59,12 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/stephane/src/github.com/matrixise/alyra-shingitai",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/stephane/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,11 +84,34 @@
       <option name="presentableId" value="Default" />
       <updated>1743968937335</updated>
       <workItem from="1743968938716" duration="30000" />
-      <workItem from="1743968969217" duration="25000" />
+      <workItem from="1743968969217" duration="1022000" />
     </task>
+    <task id="LOCAL-00001" summary="Add IntelliJ IDEA project settings and update .gitignore for Node, React, and NextJS templates">
+      <option name="closed" value="true" />
+      <created>1743969090127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743969090127</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add .tool-versions with task and nodejs versions">
+      <option name="closed" value="true" />
+      <created>1743969201904</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743969201904</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add comprehensive .gitignore for Node, React, and NextJS projects" />
+    <MESSAGE value="Add IntelliJ IDEA project settings and update .gitignore for Node, React, and NextJS templates" />
+    <MESSAGE value="Add .tool-versions with task and nodejs versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .tool-versions with task and nodejs versions" />
   </component>
 </project>
