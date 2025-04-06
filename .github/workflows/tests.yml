@@ -36,6 +36,27 @@ jobs:
       - name: Run Coverage
         run: SOLIDITY_COVERAGE=true npx hardhat coverage
 
+  test-frontend-member:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./shingitai-member
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check lint
+        run: npm run lint
+
   test-frontend-certificate:
     runs-on: ubuntu-latest
     defaults:
