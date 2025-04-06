@@ -5,35 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b74fde0-b0a0-439e-bc14-10bc9b3d3891" name="Changes" comment="Add .tool-versions with task and nodejs versions">
-      <change afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/Taskfile.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/GradeManager.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/GradeSBT.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/IGradeSBT.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/IPresenceCounter.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/ParticipationSFT.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/PresenceCounter.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/contracts/PresenceCounterMock.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/hardhat.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/ignition/modules/Deployments.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/badges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/generated.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/images.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/scripts/populate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/GradeManager.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/GradeSBT.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/ParticipationSFT.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/PresenceCounter.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/GradeManagerWrapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/GradeSBTContractWrapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/ParticipationContractWrapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/test/wrappers/PresenceCounterWrapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shingitai-backend/wagmi.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +35,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/stephane/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/stephane/src/github.com/matrixise/alyra-shingitai/shingitai-certificate/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -84,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743968937335</updated>
       <workItem from="1743968938716" duration="30000" />
-      <workItem from="1743968969217" duration="1022000" />
+      <workItem from="1743968969217" duration="2895000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project settings and update .gitignore for Node, React, and NextJS templates">
       <option name="closed" value="true" />
@@ -102,16 +73,153 @@
       <option name="project" value="LOCAL" />
       <updated>1743969201904</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add initial package.json and .prettierrc for shingitai-backend project">
+      <option name="closed" value="true" />
+      <created>1743970028645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970028645</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add the contracts and the tests">
+      <option name="closed" value="true" />
+      <created>1743970078714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970078714</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add GitHub Actions workflow for backend tests and Taskfile for task management">
+      <option name="closed" value="true" />
+      <created>1743970198066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970198066</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add the abi-generator tool&#10;Create task to update ABI files across projects">
+      <option name="closed" value="true" />
+      <created>1743970393650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970393650</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add shingitai-ponder utilizing ponder.sh project for smart contract event indexing and storage for GraphQL access">
+      <option name="closed" value="true" />
+      <created>1743970623781</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970623781</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add indexer configuration and update ABI copy procedure in Taskfile.yml">
+      <option name="closed" value="true" />
+      <created>1743970668760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743970668760</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add .envrc to .gitignore for environment variable management security">
+      <option name="closed" value="true" />
+      <created>1743971016840</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971016840</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add support for uploading images to Pinata in shingitai-tools">
+      <option name="closed" value="true" />
+      <created>1743971117351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971117351</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add shingitai-certificate, a specific site for a public access to the certificate">
+      <option name="closed" value="true" />
+      <created>1743971188625</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971188625</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add shingitai-member, the &quot;mobile&quot; interface for the member.">
+      <option name="closed" value="true" />
+      <created>1743971362936</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971362936</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update Taskfile to copy generated ABI to additional projects">
+      <option name="closed" value="true" />
+      <created>1743971523317</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971523317</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add shingitai-backoffice, the main component for the organiser">
+      <option name="closed" value="true" />
+      <created>1743971623913</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971623913</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Copy generated ABI to shingitai-backoffice in Taskfile actions">
+      <option name="closed" value="true" />
+      <created>1743971657779</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971657779</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add populate script for shingitai-backend project">
+      <option name="closed" value="true" />
+      <created>1743971754429</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971754429</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add the shingitai-validator interface, a mobile interface for the validator.&#10;Unfortunately, not finished :-(">
+      <option name="closed" value="true" />
+      <created>1743971872249</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743971872250</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add comprehensive .gitignore for Node, React, and NextJS projects" />
     <MESSAGE value="Add IntelliJ IDEA project settings and update .gitignore for Node, React, and NextJS templates" />
+    <MESSAGE value="Add initial package.json and .prettierrc for shingitai-backend project" />
+    <MESSAGE value="Add the contracts and the tests" />
+    <MESSAGE value="Add GitHub Actions workflow for backend tests and Taskfile for task management" />
+    <MESSAGE value="Add the abi-generator tool&#10;Create task to update ABI files across projects" />
+    <MESSAGE value="Add shingitai-ponder utilizing ponder.sh project for smart contract event indexing and storage for GraphQL access" />
+    <MESSAGE value="Add indexer configuration and update ABI copy procedure in Taskfile.yml" />
+    <MESSAGE value="Add .envrc to .gitignore for environment variable management security" />
+    <MESSAGE value="Add support for uploading images to Pinata in shingitai-tools" />
+    <MESSAGE value="Add shingitai-certificate, a specific site for a public access to the certificate" />
+    <MESSAGE value="Add shingitai-member, the &quot;mobile&quot; interface for the member." />
+    <MESSAGE value="Update Taskfile to copy generated ABI to additional projects" />
+    <MESSAGE value="Add shingitai-backoffice, the main component for the organiser" />
+    <MESSAGE value="Copy generated ABI to shingitai-backoffice in Taskfile actions" />
+    <MESSAGE value="Add populate script for shingitai-backend project" />
     <MESSAGE value="Add .tool-versions with task and nodejs versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .tool-versions with task and nodejs versions" />
+    <MESSAGE value="Add the shingitai-validator interface, a mobile interface for the validator.&#10;Unfortunately, not finished :-(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the shingitai-validator interface, a mobile interface for the validator.&#10;Unfortunately, not finished :-(" />
   </component>
 </project>
