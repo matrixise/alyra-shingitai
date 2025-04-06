@@ -1,5 +1,7 @@
 # README - Shin Gi Tai
 
+![shingitai-logo](https://github.com/user-attachments/assets/8d01d751-8147-4ae3-b41b-ce8880fdad1f)
+
 ## Coverage
 
 ```
