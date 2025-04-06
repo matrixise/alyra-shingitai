@@ -1,0 +1,65 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  install:dependencies:
+    desc: Install the dependencies
+    cmds:
+      - npm installgit
+  compile:
+    desc: Compile the smart contract
+    cmds:
+      - npx hardhat compile
+
+  deploy:hardhat:
+    desc: Deploy the SCs on Hardhat
+    vars:
+      CHAIN_ID: 31337
+    cmds:
+      - npx hardhat ignition deploy ignition/modules/Deployments.ts --network localhost
+
+  deploy:sepolia:
+    desc: Deploy on Sepolia
+    cmds:
+      - npx hardhat ignition deploy ignition/modules/Deployments.ts --network sepolia --verify
+
+
+  hardhat:node:
+    desc: Run a Hardhat Node
+    cmds:
+      - npx hardhat node
+
+  populate:hardhat:
+    desc: Populate SC
+    cmds:
+      - npx hardhat run scripts/populate.ts --network localhost
+
+#  populate:sepolia:
+#    desc: Populate SC
+#    dotenv: ['.env']
+#    cmds:
+#      - npx hardhat run scripts/populate.ts --network sepolia
+#
+  tests:
+    desc: Run the tests
+    cmds:
+      - npx hardhat test
+
+  gas-reporter:
+    env:
+      REPORT_GAS: true
+    cmds:
+      - npx hardhat test
+
+  coverage:
+    env:
+      SOLIDITY_COVERAGE: true
+    desc: Run the coverage
+    cmds:
+      - npx hardhat coverage
+
+  format:
+    desc: Run the formatting system
+    cmds:
+      - npm run prettier

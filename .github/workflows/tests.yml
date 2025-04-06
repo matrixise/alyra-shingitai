@@ -1,0 +1,37 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./shingitai-backend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint the code
+        run: npx hardhat check
+
+      - name: Compile Smart Contracts
+        run: npx hardhat compile
+
+      - name: Run Tests
+        run: npx hardhat test
+
+      - name: Run Coverage
+        run: SOLIDITY_COVERAGE=true npx hardhat coverage
