@@ -7,12 +7,16 @@ includes:
   backend:
     taskfile: ./shingitai-backend/Taskfile.yml
     dir: ./shingitai-backend
+  indexer:
+    taskfile: ./shingitai-indexer/Taskfile.yml
+    dir: ./shingitai-indexer
 
 tasks:
   update-abi:
     desc: Update the ABI everywhere.
     cmds:
       - task: abi_generator:default
+      - cp abi-generator/src/generated.ts shingitai-indexer/abis/generated.ts
       - cp abi-generator/src/generated.ts shingitai-backend/scripts/generated.ts
     sources:
       - abi-generator/src/generated.ts
