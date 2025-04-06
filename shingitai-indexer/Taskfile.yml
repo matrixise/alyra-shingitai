@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  run:
+    desc: Run the Ponder node
+    cmds:
+      - npm run dev
