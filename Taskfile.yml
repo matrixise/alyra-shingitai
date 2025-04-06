@@ -16,8 +16,11 @@ tasks:
     desc: Update the ABI everywhere.
     cmds:
       - task: abi_generator:default
+      - cp abi-generator/src/generated.ts shingitai-certificate/src/generated.ts
       - cp abi-generator/src/generated.ts shingitai-indexer/abis/generated.ts
       - cp abi-generator/src/generated.ts shingitai-backend/scripts/generated.ts
+      - cp abi-generator/src/generated.ts shingitai-member/src/generated.ts
+
     sources:
       - abi-generator/src/generated.ts
     run: when_changed
