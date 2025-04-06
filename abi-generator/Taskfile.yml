@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - npx wagmi generate
+    run: when_changed
+    method: timestamp
+    sources:
+      - ../shingitai-backend/artifacts/contract/GradeSBT.sol/GradeSBT.json
+      - ../shingitai-backend/artifacts/contract/ParticipationSFT.sol/ParticipationSFT.sol.json

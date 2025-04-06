@@ -1,6 +1,20 @@
 version: '3'
 
 includes:
+  abi_generator:
+    taskfile: ./abi-generator/Taskfile.yml
+    dir: ./abi-generator
   backend:
     taskfile: ./shingitai-backend/Taskfile.yml
     dir: ./shingitai-backend
+
+tasks:
+  update-abi:
+    desc: Update the ABI everywhere.
+    cmds:
+      - task: abi_generator:default
+      - cp abi-generator/src/generated.ts shingitai-backend/scripts/generated.ts
+    sources:
+      - abi-generator/src/generated.ts
+    run: when_changed
+    method: timestamp
