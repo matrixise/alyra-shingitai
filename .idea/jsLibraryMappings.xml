@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="alyra-shingitai/abi-generator/node_modules" />
+    <excludedPredefinedLibrary name="alyra-shingitai/shingitai-doc/node_modules" />
+    <excludedPredefinedLibrary name="alyra-shingitai/shingitai-tools/node_modules" />
+    <excludedPredefinedLibrary name="alyra-shingitai/shingitai-validator/node_modules" />
+  </component>
+</project>
