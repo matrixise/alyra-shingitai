@@ -20,7 +20,7 @@ tasks:
       - cp abi-generator/src/generated.ts shingitai-indexer/abis/generated.ts
       - cp abi-generator/src/generated.ts shingitai-backend/scripts/generated.ts
       - cp abi-generator/src/generated.ts shingitai-member/src/generated.ts
-
+      - cp abi-generator/src/generated.ts shingitai-backoffice/src/generated.ts
     sources:
       - abi-generator/src/generated.ts
     run: when_changed
